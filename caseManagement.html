@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Case Details">
+        <lightning-layout>
+            <lightning-layout-item size="6">
+                
+                <!-- Displaying fields to get information. -->
+                <lightning-input required class="slds-p-around_medium" label="First Name" name="firstName" 
+                    onchange={firstNameChangedHandler}></lightning-input>
+                <lightning-input required class="slds-p-around_medium" label="Last Name" name="lastName" 
+                    onchange={lastNameChangedHandler}></lightning-input>
+                <lightning-input required class="slds-p-around_medium" label="Email" name="email" 
+                    onchange={emailChangedHandler}></lightning-input>
+                <lightning-input required class="slds-p-around_medium" label="Phone" type="phone" name="phone" 
+                    onchange={phoneChangedHandler}></lightning-input>
+                <lightning-input  class="slds-p-around_medium" label="Description" name="caseDescription" 
+                    onchange={descriptionChangedHandler}></lightning-input>
+                
+                <br/>
+                <lightning-button class="slds-m-left_x-small" label="Submit" variant="brand" 
+                    onclick={submitCaseDetails}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>
